@@ -1,0 +1,44 @@
+.backToTop{
+	background: $backToTop;
+	bottom: 1em;
+	color: $backToTopFont;
+	border: 1px solid $borderColor;
+	border-radius: 50%;
+	display: none;
+	height: 5em;
+	line-height: 5em;
+	opacity: 0.6;
+	position: fixed;
+	right: 1em;
+	text:{
+		align: center;
+		decoration: none;
+	}
+	width: 5em;
+	z-index: 1000;
+}
+
+.page{
+	@media screen and (min-width: 768px){
+		float: right;
+		width: 75%;
+	}
+}
+
+.col2{
+	@media screen and (min-width: 581px){
+		float: left;
+		margin-right: 4%;
+		width: 48%;
+	}
+
+	& + .col2{
+		margin-right: 0;
+	}
+}
+
+.v65-featureRight, .v65-right, 
+.v65-featureLeft, .v65-left, 
+.v65-border{
+	@include boxSizing;
+}

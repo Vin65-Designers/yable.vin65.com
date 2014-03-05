@@ -1,0 +1,207 @@
+/* ----- a. Main Menu ----- */
+.mainMenu{
+	font-size: 13px;
+	position: relative;
+	z-index: 101;
+
+	@media screen and (max-width: 767px){
+		margin: 1em 0;
+	}
+
+	@media screen and (min-width: 768px){
+		float: right;
+		height: 24px;
+		margin: 30px 4% 20px 0;
+	}
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+
+		@media screen and (max-width: 767px){
+			text-align: center;
+		}
+
+		@media screen and (min-width: 768px){
+			text-align: right;
+		}
+
+		ul{
+			border: 1px solid $borderColor;
+			background: $subNavBackgroundColor;
+			display: none;
+			font-size: 12px;
+			left: -10px;
+			position: absolute;
+			top: 32px;
+			width: 180px;
+		}
+	}
+
+	li{
+		display: inline-block;
+		padding: 0;
+		position: relative;
+
+		@media screen and (max-width: 767px){
+			margin: 0 10px;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 819px){
+			margin: 0 0 0 35px;
+		}
+
+		@media screen and (min-width: 820px){
+			margin: 0 0 0 50px;
+		}
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		// Drop Down
+		&:hover ul{
+			@media screen and (min-width: 768px){
+				display: block;
+			}
+		}
+
+		li{
+			display: block;
+			float: none;
+			margin: 0;
+			text-align: left;
+			width: 180px;
+
+			a{
+				color: $subNavLinkColor;
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				margin: 0;
+				padding: 2px 0 2px 10px;
+				text-align: left;
+				text-transform: none;
+				width: 170px;
+
+				&:hover{
+					color: $subNavLinkHover;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	a{
+		color: $navLinkColor;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		text-decoration: none;
+
+		@media screen and (max-width: 767px){
+			height: 44px;
+			line-height: 44px;
+			padding: 0 0.5em;
+		}
+
+		@media screen and (min-width: 768px){
+			height: 32px;
+			line-height: 32px;
+		}
+
+		&:hover{
+			color: $navLinkHover;
+			text-decoration: none;
+		}
+	}
+
+	.v65-pageAParent{
+		color: $navSelected;
+	}
+
+	.v65-home{
+		@media screen and (max-width: 919px){
+			display: none;
+		}
+	}
+
+	.v65-selected{
+		color: $leftNavSelected;
+		font-weight: bold;
+	}
+
+	.footerMenuLink{
+		bottom: 0;
+		font-size: 1.5em;
+		position: absolute;
+		right: 0;
+
+		@media screen and (max-width: 430px){
+			display: block;
+		}
+
+		@media screen and (min-width: 431px){
+			display: none;
+		}
+	}
+}
+
+/* ----- b. Sub Menu ----- */
+.subMenu{
+	margin-bottom: 0;
+	margin-top: 6%;
+
+	@media screen and (min-width: 768px){
+		border-right: 1px solid $borderColor;
+		float: left;
+		margin-right: 4%;
+		padding-right: 2%;
+		width: 17.5%;
+	}
+
+	h3{
+		@media screen and (max-width: 767px){
+			display: none;		
+		}
+	}
+
+	ul{
+		list-style: none;
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	li{
+		line-height: 3;
+
+		@media screen and (max-width: 767px){
+			border-top: 1px solid $borderColor;
+			line-height: 44px;
+			text-align: center;
+		}
+
+		ul{
+			margin-left: 10px;
+		}
+	}
+
+	a{
+		display: inline-block;
+		line-height: 1.5;
+		width: 100%;
+	}
+
+	.v65-pageAParent {
+		color: $navSelected;
+	}
+
+	.v65-leftSelected{
+		color: $leftNavSelected;
+		font-weight: bold;
+	}
+
+}

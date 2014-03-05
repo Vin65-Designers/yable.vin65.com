@@ -1,0 +1,144 @@
+footer{
+	color: $footerFontColor;
+	padding: 1.5em 0;
+	text-align: left;
+	background: $footerColor;
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $footerFontColor;
+	}
+
+	.footerContainer {
+		max-width: 990px;
+		margin:0 auto;
+	}
+	
+	.footerUpper {
+		float:left;
+		margin:0 4%;
+	}
+
+	.footerLower {
+		@media screen and (min-width:768px){
+			border-top: 1px solid $borderColor;
+		}
+		padding-top:1.5em;
+		clear:both;
+		margin:0 4%;
+		@media screen and (min-width:768px){
+			nav li + li:before{
+			    content: " | ";
+			    padding: 0 5px;
+			}
+		}
+
+	}
+
+	.footerTools {
+		margin:1% 4%;
+	}
+
+	.v65-pod {
+		@media screen and (min-width:581px){
+			float:left;
+			width:30%;
+			margin:0 1.66%;
+		}
+		@media screen and (max-width:580px){
+			width:100%;
+		}
+	}
+
+	.v65-pod:first-child {
+		margin-left:0;
+	}
+
+	.v65-pod:last-child {
+		margin-right:0;
+	}
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		@media screen and (min-width: 768px){
+			margin-bottom: 0.5em;
+		}
+	}
+
+	li{
+		@media screen and (max-width: 767px){
+			border-top: 1px solid $borderColor;
+			line-height: 44px;
+			text-align: center;
+		}
+		
+		&:first-child {
+				padding:0;
+			}
+
+		@media screen and (min-width: 768px){
+			display: inline;
+			padding-right:5px;
+		}
+
+		a{
+			color: $footerFontColor;
+			display: inline-block;
+			font-size: 0.917em;
+			position: relative;
+
+			@media screen and (max-width: 767px){
+				width: 100%;
+			}
+
+			&:hover{
+				color: $footerFontColorHover;
+			}
+		}
+	}
+
+	.phone, .email, .map{
+		a:hover{
+			text-decoration: none;
+		}
+	}
+
+	.legal{
+		font-size: 0.917em;
+
+		li{
+			display: block;
+		}
+	}
+
+	a{
+		color:$footerFontColor;
+	}
+
+	.v65-pod {
+		a {
+			font-size: 1.1em;
+			color:$linkColor;
+		}
+	}
+}
+
+// VIN65 OVERRIDES 
+#v65-subscribeWidget {
+	@media screen and (min-width:581px){
+		float: right;
+		width: 30%;
+		margin: 0 3.22% 0 0;
+	}
+	input {
+		border: 3px solid $borderColor;
+		min-width: 10em;
+		background: none;
+		color: $inputColor;
+		@media screen and (max-width:767px){
+			margin-bottom: 10px;
+		}
+	}
+}

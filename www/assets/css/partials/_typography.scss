@@ -1,0 +1,130 @@
+html {
+	font-size: 75%;
+	background-color: $headerColor;
+}
+
+body{
+	background-color: $backgroundColor;
+	color: $fontColor;
+	font-family: $fontFamily;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $headingFontColor;
+	font:{
+		family: $headingFontFamily;
+		style: normal;
+		weight: normal;
+	}
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.3333333333333333;
+	font-weight: 600;
+	margin-bottom: 0.6666666666666666em;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+
+h4 {
+	font-size: 1.3125em;
+	line-height: 1.1428571428571428;
+	margin-bottom: 1.1428571428571428em;
+}
+
+h5 {
+	font-size: 1.125em;
+	line-height: 1.3333333333333333;
+	margin-bottom: 1.3333333333333333em;
+}
+
+h6 {
+	font-size: 1em;
+	line-height: 1.5;
+	margin-bottom: 1.5em;
+}
+
+.v65-title { 
+	color: $headingFontColor;
+	font:{
+		family: $headingFontFamily;
+		size: 2em;
+		style: normal;
+		weight: normal;
+	}
+	line-height: 1;
+	margin-bottom: 0.5em;
+}
+
+.v65-subtitle {
+	color: $headingFontColor;
+	font:{
+		size: 1.5em;
+		family: $headingFontFamily;
+		weight: normal;
+	}
+	line-height: 1;
+	margin-bottom: 1em;
+}
+
+p, blockquote {
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+}
+
+dl, ol, ul {
+	margin: 0 0 1.5em;
+}
+
+dd, dt, li {
+	line-height: 1.5;
+	margin: 0;
+}
+
+a{
+	color: $linkColor;
+	text-decoration: none;
+
+	&:hover, &:focus, &:active{
+		text-decoration: underline;
+	}
+}
+
+img{
+	border:none;
+	height: auto !important;
+	max-width: 100%;
+}
+
+form {
+	margin-bottom: 1em;
+}
+
+legend {
+	color: $fontColor;
+}
+
+hr {
+	background-color: $fontColor;
+	border: 0;
+	color: $fontColor;
+	height: 1px;
+}
+
+a[name=footerNav]{
+	display: none !important;
+}

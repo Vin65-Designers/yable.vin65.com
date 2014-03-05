@@ -1,0 +1,111 @@
+button {
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		background: $mainButtonColor;
+		border-radius: 0;
+		font-family: $fontFamily;
+		margin-bottom: 5px;
+		span{
+			background: $mainButtonColor;
+			color: #fff;
+			border-radius: 0;
+			padding: 0px 6px;
+			@media screen and (max-width : 580px){
+				padding: 0 20px;
+			}
+		}
+		&:hover{
+			background:$mainButtonColor;
+			span{
+			}
+		}
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		background:$altButtonColor;
+		color: #fff;
+		font-family: $fontFamily;
+		margin-bottom: 5px;
+		span{
+			background:$altButtonColor;
+			color: #fff;
+			border-radius: 0;
+			padding: 1px 6px;
+			@media screen and (max-width : 580px){
+				padding: 0 20px;
+			}
+		}
+		&:hover{
+			background: $altButtonColor;
+			span{
+				background: $altButtonColor;
+			}
+		}
+
+	}
+}
+
+a{
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn, &.fullWidthBtn{
+		background:$mainButtonColor;
+		border-radius: 0;
+		font-family: $fontFamily;
+		margin-bottom: 5px;
+		span{
+			background:$mainButtonColor;
+			color: #fff;
+			border-radius: 0;
+			padding: 1px 6px;
+			@media screen and (max-width : 580px){
+				padding: 0 20px;
+			}
+		}
+		&:hover{
+			background:$mainButtonColor;
+			text-decoration: none;
+
+			span{
+				background:$mainButtonColor;
+			}
+		}
+	}
+
+	&.fullWidthBtn{
+		display: block;
+		font-size: 16px;
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		background:$altButtonColor;
+		border-radius: 0; 
+		font-family: $fontFamily;
+		margin-bottom: 5px;
+		span{
+			background:$altButtonColor;
+			border-radius: 0; 
+			color: #fff;
+			padding: 1px 6px;
+			@media screen and (max-width : 580px){
+				padding: 0 20px;
+			}
+		}
+		&:hover{
+			background: $altButtonColor;
+			span{
+				background: $altButtonColor;
+			}
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
+
+#v65-subscribeWidget{
+	button.defaultBtn span, button.largeBtn span {
+		padding: 3px 6px;
+	}
+}

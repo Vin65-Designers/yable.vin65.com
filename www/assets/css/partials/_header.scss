@@ -1,0 +1,61 @@
+header.primary{
+	margin-bottom: 1em;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	background: $headerColor;
+	border-bottom: 8px $headerBorderColor solid;
+}
+
+.headerMain {
+	max-width:990px;
+	margin:0 auto;
+}
+
+	#user-tools {
+		@media screen and (min-width:581px){
+			margin:0 4%;
+		}
+		@media screen and (max-width: 580px){
+			border-bottom: 1px solid $topBarColor;
+		}
+
+		a {
+			color: $headerFontColor;
+		}
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		display: block;
+		@media screen and (max-width:580px){
+			margin: 1em auto 0;
+		}
+		height: 88px;
+		position: relative;
+		width: 210px;
+
+		&.errorLogo{
+			float: none;
+		}
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+		
+		@media screen and (max-width: 767px) and (min-width:581px){
+			clear: both;
+			margin: 0.5em auto 0;
+		}
+
+		@media screen and (min-width: 768px){
+			float: left;
+			padding: 0.2em 0;
+			margin: 40px 0 0 4%;
+		}
+	}

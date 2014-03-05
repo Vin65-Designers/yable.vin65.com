@@ -1,0 +1,77 @@
+#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo, 
+#v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo, 
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
+#v65-fieldset-usernamePassword{
+	@media screen and (max-width: 725px){
+		width: 98%;
+	}
+}
+
+.v65-product-addToCart-quantity {
+	input {
+		border:none;
+		background:#ccc;
+		min-width: 1.5em;
+	}
+}
+
+.v65-productGroup-teaser{
+	width: 100%;
+}
+
+.v65-productGroup-product{
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.v65-productGroup{
+	.v65-clear{
+		@media screen and (max-width: 750px){
+			display: none;
+		}
+
+		&.productGroup-2Up-rowClear{
+			display: none;
+
+			@media screen and (min-width:581px) and (max-width: 599px){
+				display: block;
+			}
+		}
+
+		&.productGroup-3Up-rowClear{
+			display: none;
+
+			@media screen and (min-width: 600px) and (max-width: 750px){
+				display: block;
+			}
+		}
+	}
+}
+
+.print{
+	@media screen and (max-width: 720px){
+		margin: 0 10px;
+	}
+}
+
+.v65-product5Up {
+	float: left;
+	margin: 0 2% 1.5em 0;
+	width: 23%;
+	@media screen and (max-width: 720px) {
+		width: 48%;
+	}
+	@media screen and (max-width: 580px) {
+		width: 100%;
+		margin-bottom: 1.5em;
+	}
+}
+
+
+.v65-product3Up {
+	@media screen and (max-width: 600px){
+		width: 100%;
+		margin-right: 0;
+	}
+}
